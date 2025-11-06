@@ -1,56 +1,56 @@
 {
 	"name": "@blockchainhq-xyz/n8n-nodes-pocket-client",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "n8n node for making SOL payments via x402 protocol",
 	"keywords": [
-	  "n8n-community-node-package",
-	  "n8n",
-	  "solana",
-	  "x402",
-	  "payment",
-	  "client"
+		"n8n-community-node-package",
+		"n8n",
+		"solana",
+		"x402",
+		"payment",
+		"client"
 	],
 	"license": "MIT",
 	"homepage": "https://github.com/blockchain-hq/x402-pocket-node-client",
 	"author": {
-	  "name": "Mahima Thacker"
+		"name": "Mahima Thacker"
 	},
 	"repository": {
-	  "type": "git",
-	  "url": "https://github.com/blockchain-hq/x402-pocket-node-client.git"
+		"type": "git",
+		"url": "https://github.com/blockchain-hq/x402-pocket-node-client.git"
 	},
 	"main": "index.js",
 	"scripts": {
-	  "build": "tsc && gulp build:icons",
-	  "dev": "tsc --watch",
-	  "format": "prettier nodes credentials --write",
-	  "lint": "eslint nodes credentials package.json",
-	  "lintfix": "eslint nodes credentials package.json --fix",
-	  "prepublishOnly": "npm run build"
+		"build": "tsc && gulp build:icons",
+		"dev": "tsc --watch",
+		"format": "prettier nodes credentials --write",
+		"lint": "eslint nodes credentials package.json",
+		"lintfix": "eslint nodes credentials package.json --fix",
+		"prepublishOnly": "npm run build"
 	},
 	"files": [
-	  "dist"
+		"dist"
 	],
 	"n8n": {
-	  "n8nNodesApiVersion": 1,
-	  "credentials": [
-		"dist/credentials/SolanaX402ClientApi.credentials.js"
-	  ],
-	  "nodes": [
-		"dist/nodes/SolanaX402Client/SolanaX402Client.node.js"
-	  ]
+		"n8nNodesApiVersion": 1,
+		"credentials": [
+			"dist/credentials/SolanaX402ClientApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/SolanaX402Client/SolanaX402Client.node.js"
+		]
 	},
 	"dependencies": {
-	  "x402-client-sdk": "^1.0.0",
-	  "@solana/web3.js": "^1.95.0",
-	  "bs58": "^5.0.0"
+		"x402-client-sdk": "^1.0.0",
+		"@solana/web3.js": "^1.95.0",
+		"bs58": "^5.0.0"
 	},
 	"devDependencies": {
-	  "@types/node": "^20.0.0",
-	  "n8n-workflow": "^1.0.0",
-	  "typescript": "^5.0.0",
-	  "gulp": "^4.0.2",
-	  "prettier": "^3.0.0",
-	  "eslint": "^8.0.0"
+		"@types/node": "^20.0.0",
+		"n8n-workflow": "^1.0.0",
+		"typescript": "^5.0.0",
+		"gulp": "^4.0.2",
+		"prettier": "^3.0.0",
+		"eslint": "^8.0.0"
 	}
-  }
+}
